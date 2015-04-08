@@ -1,0 +1,5 @@
+load('dat.RData')
+Sys.setlocale("LC_TIME", "English")
+png("plot2.png")
+with(dat, plot(Time, Global_active_power,type = 'l',ylab = "Global active power (kilowatts)",xlab = ''))
+dev.off()
